@@ -12,7 +12,7 @@ void hanoi_tower(int disco, char comeco, char meio, char fim){
 }
 int main(){
      int n;
-     printf("\n~~~~Hanoi Tower~~~~\n");
+     printf("\n~UMU~UMU~UMU~Hanoi Tower~UMU~UMU~UMU~\n");
      printf("Digite o númerod de discos : ");
      scanf("%d",&n);
      hanoi_tower(n,'C','M','F');
