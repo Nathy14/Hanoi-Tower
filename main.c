@@ -2,20 +2,21 @@
 
 void hanoi_tower(int disco, char comeco, char meio, char fim){
   if(disco == 1){
-    printf("\nMover disco 1 do %c  para o %c",comeco,fim);
+    printf("\nMover disco 1 do %c para o %c\n",comeco,fim);
   }
   else{
     hanoi_tower(disco-1, comeco, fim, meio);
-    printf("\nMover disco %d do %c para o %c",disco,comeco,fim);
+    printf("\nMover disco %d do %c para o %c\n",disco,comeco,fim);
     hanoi_tower(disco-1,meio, comeco, fim);//não entendo o pq disso (=^.^=)
   }
 }
 int main(){
      int n;
      printf("\n~UMU~UMU~UMU~Hanoi Tower~UMU~UMU~UMU~\n");
-     printf("Digite o número de discos : ");
+     printf("Digite o númerod de discos : ");
      scanf("%d",&n);
      hanoi_tower(n,'C','M','F');
+     return 1;
 }
 
 //temos que fazer o código de forma dinâmica!
